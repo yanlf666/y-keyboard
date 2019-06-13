@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>62035919</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\debugger.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\debugger.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_engine_usci_init.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_engine_usci_init.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$PROJ_DIR$\hidi2c\i2c\i2c_engine_usci.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\hidi2c\hid\hid_engine.h</file>
+      <file>$PROJ_DIR$\hidi2c\hid\hid_reportparser.c</file>
+      <file>$PROJ_DIR$\hidi2c\hid\hid_engine.c</file>
+      <file>$PROJ_DIR$\hidi2c\hid\hid_reportparser.h</file>
+      <file>$PROJ_DIR$\hidi2c\i2c\usci\i2c_engine_usci.c</file>
+      <file>$PROJ_DIR$\hidi2c\i2c\usci\i2c_engine_usci.h</file>
+      <file>$PROJ_DIR$\hidi2c\i2c\usci\i2c_engine_usci_init.c</file>
+      <file>$PROJ_DIR$\hidi2c\i2c\usci\i2c_engine_usci_init.h</file>
+      <file>$PROJ_DIR$\hidi2c\hidi2c_errno.h</file>
+      <file>$PROJ_DIR$\mouse_descriptors.h</file>
+      <file>$PROJ_DIR$\hidi2c\types.h</file>
+      <file>$PROJ_DIR$\hidi2c_settings.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xsfn.r43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+      <file>$PROJ_DIR$\hidi2c\i2c\i2c_engine_usci.c</file>
+      <file>$PROJ_DIR$\hidi2c\hidi2c_settings.h</file>
+      <file>$PROJ_DIR$\hidi2c\debugger\debugger.h</file>
+      <file>$PROJ_DIR$\hidi2c\debugger\debugger.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_engine_usci.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\hid_engine.r43</file>
+      <file>$TOOLKIT_DIR$\config\multiplier32_loc2.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\hidi2c-mouse.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hid_reportparser.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hid_engine.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hid_reportparser.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430f5529.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xsfn.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F5529.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c_engine_usci.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hidi2c-mouse.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\keyboard\main.c</file>
+      <file>$PROJ_DIR$\hidi2c\hidi2c_types.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hidi2c\hid\hid_reportparser.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 53 30 27 31 50 6 43 38 20 37 4</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 10 17 38 30 27 31 46 50 6 43 20 37 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hidi2c\hid\hid_engine.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 10 53 30 27 31 50 6 43 52 15 18 12 14 38 20 29 37 4</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 7 17 10 12 15 18 38 30 27 31 46 50 6 43 20 29 37 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hidi2c\i2c\usci\i2c_engine_usci.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 45 44 35 18 15 7 10 53 30 27 31 50 6 43 52 12 14 38 20 29 37 4</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22 45 44 35 18 15 7 17 10 12 14 38 30 27 31 46 50 6 43 20 29 37 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hidi2c\i2c\usci\i2c_engine_usci_init.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 14 53 30 27 31 50 6 43 18 22 45 44 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 17 14 18 22 45 44 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 16 53 30 27 31 50 6 43 7 10 18 22 45 44 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 17 16 7 10 18 22 45 44 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hidi2c\i2c\i2c_engine_usci.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 45 44 35 5 17 24 15 38 30 27 31 50 6 43 20 29 37 4</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22 45 44 35 5 17 24 15 38 30 27 31 46 50 6 43 20 29 37 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hidi2c\debugger\debugger.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 22 45 44 35 25 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\hidi2c-mouse.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 47 33 32 42 48 2 36 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\hidi2c-mouse.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 41 40 28 3 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\hidi2c\debugger\debugger.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

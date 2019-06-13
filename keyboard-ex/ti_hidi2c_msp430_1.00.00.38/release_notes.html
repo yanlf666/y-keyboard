@@ -1,0 +1,171 @@
+<!-- --COPYRIGHT--,BSD
+ *  Copyright (c) 2012, Texas Instruments Incorporated
+ *  All rights reserved.
+ * 
+ *  Redistribution and use in source and binary forms, with or without
+ *  modification, are permitted provided that the following conditions
+ *  are met:
+ * 
+ *  *  Redistributions of source code must retain the above copyright
+ *     notice, this list of conditions and the following disclaimer.
+ * 
+ *  *  Redistributions in binary form must reproduce the above copyright
+ *     notice, this list of conditions and the following disclaimer in the
+ *     documentation and/or other materials provided with the distribution.
+ * 
+ *  *  Neither the name of Texas Instruments Incorporated nor the names of
+ *     its contributors may be used to endorse or promote products derived
+ *     from this software without specific prior written permission.
+ * 
+ *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ *  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ *  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ *  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+ *  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ *  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ *  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ *  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ *  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ *  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * --/COPYRIGHT-- -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta content="HTML Tidy for Windows (vers 15 August 2007), see www.w3.org" name="generator">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"><!-- /* * Copyright 2007 by Texas Instruments Incorporated. * All rights reserved. Property of Texas Instruments Incorporated. * Restricted rights to use, duplicate or disclose this code are * granted through contract. * * */ -->
+<title>HIDI2C Development API for MSP430</title><!-- For now, we use the doxygen style sheet --><link href="docs/html/doxygen.css" rel="stylesheet" type="text/css"></head>
+<body>
+<table width="100%">
+<tbody>
+<tr>
+<td bgcolor="black" width="1"><a href="http://www.ti.com"><img src="doc/html/tilogo.gif" alt="Texas Instruments" border="0"></a></td>
+<td bgcolor="red"><img src="doc/html/titagline.gif"></td>
+</tr>
+</tbody>
+</table>
+<h1>HIDI2C Development API for MSP430&nbsp;&nbsp;1.00.00.38</h1>
+<h2>Release Notes&nbsp;</h2>
+Document Revision: 021513.1152<br>
+<h2><a name="Introduction" id="Introduction">Introduction</a></h2>
+<p>Development API driver for Microsoft HIDI2C Protocol for the Texas Instruments MSP430</p>
+This document is divided into the following sections:
+<ul>
+<li><a href="#Documentation">Documentation</a></li>
+<li><a href="#Whats_New">What's New</a></li>
+<li><a href="#Installation">Installation and Usage</a></li>
+<li><a href="#Host_Support">Host Support</a></li>
+<li><a href="#Dependencies">Dependencies</a></li>
+<li><a href="#Device_Support">Device Support</a></li>
+<li><a href="#Validation">Validation Information</a></li>
+<li><a href="release_notes.html#Upgrade">Upgrade
+and
+Compatibility Information</a></li>
+<li><a href="#Known_Issues">Known Issues</a></li>
+<li><a href="#Versioning">Versioning</a></li>
+<li><a href="#Technical_Support">Technical Support
+and Product Updates</a></li>
+</ul>
+<h2><a name="Documentation" id="Documentation">Documentation</a></h2>
+<li style="margin-left: 40px;"><a href="doc/html/index.html">HIDI2C API Index and User Guide</a></li><h2><a name="Whats_New" id="Whats_New">What's
+New</a></h2>
+<p><b>Incremental Release (1.00.37)</b></p><ul><li>Fixed pointer issue which could cause an input report to be lost with a full queue</li><li>Fixed USCI30 implementation to account for all errata scenerios</li></ul><p><b>Incremental Release (1.00.36)</b></p><ul><li>Internal engineering test build</li></ul><p><b>Incremental Release (1.00.35)</b></p><ul><li>Removed STOP ISR
+from USCI engine. This was done after it was found that a START
+condition that happens quickly enough after a STOP condition can clear
+out/cancel the STOP ISR&gt;</li><li>Cleaned up handling for report descriptors with more than one report ID</li></ul><p><b>Incremental Release (1.00.34)</b></p><ul><li>Internal engineering test build</li></ul><p><b>Incremental Release (1.00.33)</b></p><ul><li>Internal engineering test build</li></ul><p><b>Incremental Release (1.00.32)</b></p><ul><li>Updated documentation and removed outdated README<b></b></li></ul><p><b>Incremental Release (1.00.31)</b></p><ul><li>Implemented and abstracted out UCS07 eratta workaround<b></b></li></ul><p><b>Incremental Release (1.00.30)</b></p><ul><li>Fixed bug where indexes for GET_REPORT were being calculated incorrectlyz<b></b></li></ul><p><b>Major Release (1.00.29)</b></p><ul><li>Fixed bug where queue was not being cleared after a RESET</li><li>Abstracted out USCI30 bug fix to a define statement</li><li>Added cases for INPUT register and reserved register</li></ul><p><b>Incremental Release (1.00.28)</b></p><ul><li>Fixed queuing mechanism to be a FIFO (reports are sent in the order they are received)</li></ul><b>Incremental Release (1.00.26 -&nbsp;</b><b>1.00.27</b><b> )</b><br><ul><li>Internal engineering test build</li></ul><p><b>Incremental Release (1.00.25)</b></p><ul><li>Added queuing
+mechanism for setting and sending input reports. Now if a report is
+sent and the line is busy, it will queue internally in the HIDI2C API </li></ul><p><b>Incremental Release (1.00.24)</b></p><ul><li>Internal engineering test build </li></ul><p><b>Incremental Release (1.00.22)</b></p><ul><li>Fixed bug where a
+host initiated reset command did not cause the featuer report to reset
+to the original value of the feature report </li></ul><p><b>Incremental Release (1.00.21)</b></p><ul><li>Fixed implicit function declaration </li></ul><p><b>Incremental Release (1.00.20)</b></p><ul><li>Changed types to C99 Standard</li><li>Added enumeration event handler<b><br></b></li></ul><p><b>Incremental Release (1.00.19)</b></p><ul><li>Internal engineering test build</li></ul><p><b>Incremental Release (1.00.18)</b></p><ul><li>Fixed issue where incorrect feature report length was being used for devices where no feature report existed</li><li>Zeroed out return values for empty buffers<b><span style="font-weight: bold;"><br></span></b></li></ul><p><b>Incremental Release (1.00.17)</b></p><ul><li>Internal engineering test build<b></b></li></ul><p><b>Incremental Release (1.00.16)</b></p><ul><li>Fixed GET/SET report issue where incorrect type was being checked</li><li>Removed unused code from the USCI data path</li></ul><p><b>Release Candidate (1.00.15)</b></p><ul><li>Major bug fixes to interrupt handling for USCI</li><li>Bug fixes to maximum report descriptor length</li><li>Better support for "sensor" type devices</li><li>Better support/event handling for feature reports</li><li>Documentation/example updates</li></ul><p><b>Beta Release (1.00.01)</b></p>
+<ul>
+<li> Full support for mandatory device features of the Microsoft HIDI2C 1.00
+ Specification
+</li><li> Full validation of HIDI2C specification across multiple platforms including
+a TI OMAP4 based development platform
+</li><li> Bug fixes relating to multiple top level collections
+</li><li> Ability to wake up from LPM modes based on return values from event handlers
+</li></ul>
+<p><b>Alpha Release (0.91.00)</b></p>
+<ul>
+<li> Full support for mandatory device features the Microsoft HIDI2C 0.91 
+  Specification.
+</li><li> Support for GET_REPORT, SET_REPORT, SET_POWER, and RESET HIDI2C commands
+</li><li> Support for multiple top level collections (TLCs) in report descriptor
+</li><li> Two implementation examples: mouse and keyboard.
+</li><li> USCI module as a means of I2C communication</li></ul>
+<p>The MSP430 HIDI2C contains the following components. </p>
+<table border="1">
+<tbody>
+<tr>
+<td>doc </td>
+<td>MSP430 HIDI2C Documentation</td>
+</tr>
+<tr>
+<td>examples </td>
+<td>&nbsp;Premade examples (IAR,CCS,MSPGCC)</td>
+</tr>
+<tr>
+<td>hidi2c</td>
+<td>API Source Code</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="Installation" id="Installation">Installation
+and Usage</a></h2>
+<p class="MsoNormal" style="margin: 5pt 0in;">Download
+and unzip the zip file. For more information on how to use the HIDI2C API please
+refer to the <a href="doc/html/index.html">HIDI2C API Index</a> &nbsp; </p>
+<h2><a name="Upgrade_Info" id="Host_Support">Upgrade
+Information</a></h2> To upgrade from previous versions of the HIDI2C API release,
+simply delete the "hidi2c" API directory from the project and copy over the new
+folder from the new release.
+<h2><a name="Host_Support" id="Host_Support">Host
+Support</a></h2>
+<p>Microsoft Windows 8 is currently the only platform that supports the HIDI2C protocol. 
+The TI MSP430 HIDI2C API is platform agnostic as far as host hardware is concerned (WoA, x86, etc.)</p>
+<h2><a name="Dependencies" id="Dependencies">Dependencies</a></h2>Windows 8 and a TI MSP430 platform/
+<h2><a name="Device_Support" id="Device_Support">Device
+Support</a></h2>
+This release supports the Texas Instruments MSP430
+&nbsp;device family. Currently an MSP430 device with an USCI module is required for the
+I2C interactions. For more information on device support please
+refer to the <a href="doc/html/index.html">HIDI2C API Index</a>. <br>
+<h2><a name="Validation" id="Validation">Validation
+Information</a></h2>
+<p>This release is a beta version with initial rounds of validation performed. The API
+has been adopted and validated on both a TI OMAP4 Windows on ARM platorm and another
+generic x86 Windows 8 platform. <br>
+</p>
+<h2><a name="Examples" id="Examples">Examples</a>
+</h2>Please refer to the examples directory in the root directory of this release.
+Currently there are examples that show implementations for:
+<ul><li> HID Mouse
+</li><li> HID Keyboard </li></ul>
+<p>These examples take advantage of the MSP430F5529 target board.
+
+</p><h2><a name="Known_Issues" id="Known_Issues">Known
+Issues</a></h2>
+<ul>
+<li>If operating in low power mode on a 5xx device, fast wake up must be enabled on the MSP430
+when using the USCI module. If fast wakeup is not enabled, the USCI module will behave
+incorrectly and bytes could potentially be lost in transfer. The following code
+will enable fast wakeup:
+
+ <p>   /* Disable SVS ... Allows Fast Wakeup ... BOR is still active */
+    <br>PMMCTL0_H = PMMPW_H;                // PMM Password
+    <br>SVSMHCTL &amp;= ~(SVMHE+SVSHE);         // Disable High side SVS
+    <br>SVSMLCTL &amp;= ~(SVMLE+SVSLE);         // Disable Low side SVS</p></li>
+</ul>
+<h3>Outstanding Defects</h3>
+<hr>
+<h2><a name="Versioning" id="Versioning">Versioning</a></h2>
+<p>This is build 1.00.00.38 of&nbsp; HIDI2C Development API</p>
+
+<h2><small><small><a name="Technical_Support" id="Technical_Support">Technical
+Support and Product Updates</a></small></small></h2>
+<h2>Support</h2>
+<ul>
+<li>For questions and support, please visit <a href="http://support.ti.com/">support.ti.com</a></li>
+</ul>
+<h2>Additional Resources</h2>
+For more information, visit <a href="http://www.ti.com">www.ti.com</a>.
+</body></html>
