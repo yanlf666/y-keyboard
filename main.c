@@ -9,8 +9,7 @@ void main()
      {
 	  for()
 	  {
-
-	       
+	       pwm =0 ;
 	  }
      }
 }
