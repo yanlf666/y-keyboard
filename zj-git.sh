@@ -1,3 +1,3 @@
 #bin/bash
 
-git fetch https://github.com/yanlf666/y-keyboard
+git pull https://github.com/yanlf666/y-keyboard
